@@ -6,9 +6,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
+
 body{
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     width: 100%;
     
@@ -61,4 +62,28 @@ body{
     font-size: 22px;
     cursor: pointer;
     color: #fff;
+}
+
+.main-container .todo-list{
+
+}
+
+.todo-list li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+
+.todo-list li span{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    background-color: red;
 }
