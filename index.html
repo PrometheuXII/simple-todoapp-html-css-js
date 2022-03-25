@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>TodoApp | Practice</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h2 class="header__title">Todo App</h2>
+        </div>
+        <div class="content">
+            <div class="add-todo">
+                <input type="text" placeholder="Add todo..." required>
+                <button><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="display-todo">
+                <ul class="todo-list">
+                    <li>Water Flowers <span> <i class="fa-solid fa-trash-alt"></i> </span> </li>
+                    <li>Pay Bills <span> <i class="fa-solid fa-trash"></i> </span> </li>
+                    <li>Create 8 simple HTML, CSS & javascript  projects <span> <i class="fas fa-trash"> </i> </span> </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <span>You have 3 pending tasks</span>
+                <span><button>Clear All</button></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
