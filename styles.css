@@ -62,6 +62,14 @@ body{
     font-size: 22px;
     cursor: pointer;
     color: #fff;
+
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.add-todo button.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .main-container .todo-list{
