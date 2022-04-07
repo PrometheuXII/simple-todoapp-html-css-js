@@ -1,6 +1,7 @@
 const inputBox = document.querySelector(".add-todo input");
 const addBtn = document.querySelector(".add-todo button");
 const todoList = document.querySelector(".todo-list");
+const taskStatus = document.querySelector(".status");
 
 inputBox.onkeyup = ()=> {
     let userData = inputBox.value;
@@ -36,9 +37,12 @@ function showTasks() {
 
     let newLiTag = '';
     listArr.forEach((element, index) => {
-        newLiTag += '<li> '+ element +' <span onclick = "deleteTask();" ><i class="fas fa-trash"></i></span></li>';
+        newLiTag += '<li> '+ element +' <span onclick = "deleteTask('+index+');" ><i class="fas fa-trash"></i></span></li>';
     });
     todoList.innerHTML = newLiTag;
+
+    let numTasks = listArr.length;
+    taskStatus.innerHTML = 'You have '+ numTasks + ' pending tasks';
 }
 
 function deleteTask(index){
@@ -48,3 +52,5 @@ function deleteTask(index){
     localStorage.setItem("New Todo", JSON.stringify(listArr));
     showTasks();
 }
+
+showTasks();
